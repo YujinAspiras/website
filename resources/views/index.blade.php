@@ -14,7 +14,7 @@
 </head>
 <body class="p-5">
     <div class="container">
-        <h1 class="text-center mb-3">RECIPES ADMIN</h1>
+        <h1 class="text-center mb-3">MENU ADMIN</h1>
         @if (Session::has('success'))
         <div class="alert alert-success text-center" role="alert">
             {{Session::get('success')}}
@@ -22,15 +22,16 @@
         @endif
         <div class="d-flex justify-content-end mb-3">
             <a href="{{route('create')}}" class="btn btn-primary shadow">Add New Product</a>
+            <a href="{{route('login')}}" class="btn btn-primary shadow">Log out</a>
         </div>
         <table class="table table-bordered">
-            <thead class="text-center">
+            <thead class="text-center">     
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
                     <th>Image</th>
                     <th>Description</th>
-                    <th>Price</th>
+                    <th>Total cost</th>
                     <th class="text-center">Actions</th>
                 </tr>
             </thead>

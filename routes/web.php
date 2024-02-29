@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,11 @@ Route::post('/register',[AuthController::class,'registerpost'])->name('register'
 Route::get('/login',[AuthController::class,'login'])->name('login');
 Route::post('/login',[AuthController::class,'loginpost'])->name('login');
 
+Route::get('/admin',[AdminController::class,'admin'])->name('admin');
+Route::post('/admin',[AdminController::class,'adminpost'])->name('admin');
+
 Route::get('/home',[MenuController::class,'index'])->name('home');
+Route::get('/home',[MenuController::class,'indexx'])->name('home');
 
 Route::get('/create',[MenuController::class,'menu'])->name('create');
 Route::post('/create',[MenuController::class,'insertmenu'])->name('create');

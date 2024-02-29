@@ -9,8 +9,14 @@ class MenuController extends Controller
 {
     public function index(){
         $menu = Menu::all();
+        return response()->json(['menu'=> $menu]);
         return view ('products',compact('menu'));
     }
+    public function indexx(){
+        $menu = Menu::all();
+        return view ('products',compact('menu'));
+    }
+
 
     public function menu(){
         return view ('create');

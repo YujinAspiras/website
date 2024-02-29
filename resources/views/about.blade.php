@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -88,11 +88,11 @@
 
 <body>
     <div class="back-button-container">
-        <a href="index.html" class="back-button">&#8592; Back</a>
+        <a href="{{route('home')}}" class="back-button">&#8592; Back</a>
     </div>
 
     <div class="profile-card">
-        <img class="profile-picture" src="yujin.png" alt="Profile Picture">
+        <img class="profile-picture" src="{{asset('images/aspiras.png')}}" alt="Profile Picture">
         <h1>Yujin L. Aspiras</h1>
         <h2>Project Manager</h2>
         <p>A Project Manager is a professional in charge of ensuring their teams complete all projects on time and within budget.</p>
@@ -100,7 +100,7 @@
     </div>
 
     <div class="profile-card">
-        <img class="profile-picture" src="christopher.png" alt="Profile Picture">
+        <img class="profile-picture" src="{{asset('images/fung.png')}}" alt="Profile Picture">
         <h1>Christopher Fung</h1>
         <h2>Mobile Developer</h2>
         <p>Focus on developing software or systems for mobile devices. This role has become popular as more e-commerce and other digital interactions are taking place through smartphones.</p>
@@ -108,7 +108,7 @@
     </div>
 
     <div class="profile-card">
-        <img class="profile-picture" src="hans.png" alt="Profile Picture">
+        <img class="profile-picture" src="{{asset('images/alvear.png')}}" alt="Profile Picture">
         <h1>Hans Alvear</h1>
         <h2>Back End Developer</h2>
         <p>Creating the server side of the application and filling it with user-oriented elements. Developing code and libraries that can be used an unlimited number of times. </p>
@@ -116,7 +116,7 @@
     </div>
 
     <div class="profile-card">
-        <img class="profile-picture" src="adrian.png" alt="Profile Picture">
+        <img class="profile-picture" src="{{asset('images/adrian.png')}}" alt="Profile Picture">
         <h1>Adrian Aberin</h1>
         <h2>Process consultant</h2>
         <p>A project management consultant plays the role of a planner, advisor, and a project management team leader to conceptualize and implement solutions that relate to quality or process improvements.</p>
@@ -124,7 +124,7 @@
     </div>
 
     <div class="profile-card">
-    <img src="{{URL::asset('public/images/sheen.png')}}" alt="profile Pic" height="200" width="200">
+    <img src="{{URL::asset('images/sheen.png')}}" alt="profile Pic" height="200" width="200">
         <h1>Sheena Suarez Pula</h1>
         <h2>Front End Developer</h2>
         <p>Front-end developers use HTML, CSS, and JavaScript to build the client side of a website.</p>

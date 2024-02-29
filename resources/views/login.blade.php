@@ -37,6 +37,9 @@
                             <div class="text-center">
                                 <a href="{{ route('register') }}" class="text-decoration-none">Register Now</a>
                             </div>
+                            <div class="text-center">
+                                <a href="{{ route('admin') }}" class="text-decoration-none">Log in admin</a>
+                            </div>
                         </form>
                     </div>
                 </div>
